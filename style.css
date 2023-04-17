@@ -1,0 +1,142 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  max-height: 100vh;
+  font-family: "Manrope", sans-serif;
+  display: flex;
+  flex-direction: column;
+  /*justify-content: center;*/
+  align-items: center;
+  font-style: normal;
+  text-align: center;
+}
+.bgimg {
+  background: #f1f5fe;
+  border-radius: 0px 0px 0px 191.5px;
+  width: 100%;
+  height: 400px;
+}
+.bgimg::after {
+  content: "";
+  display: block;
+  background-image: url(images/pattern-circles.svg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-position-y: 10%;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: center;
+  margin: 32px;
+  position: absolute;
+  top: 0;
+  left: 4%;
+  transform: translateY(40%);
+}
+h1 {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #293356;
+}
+
+p {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 23px;
+  text-align: center;
+  color: #848ead;
+}
+.content {
+  padding: 34px 24px 32px 24px;
+  min-width: 327px;
+  height: 400px;
+  background: #ffffff;
+  position: absolute;
+  top: 0;
+  transform: translate(-2%, 55%);
+
+  box-shadow: 0px 20px 30px -5px rgba(127, 137, 185, 0.152073);
+  border-radius: 8px;
+}
+
+#line {
+  -webkit-appearance: none;
+  outline: none;
+  border-radius: 5px;
+  width: 100%;
+  height: 8px;
+  background: #ecf0fb;
+  opacity: 1;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  background: linear-gradient(
+    to right,
+    rgb(164, 243, 235) 0%,
+    rgb(164, 243, 235) 53.125%,
+    rgb(236, 240, 251) 53.125%,
+    rgb(236, 240, 251)
+  );
+}
+#line::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url(images/icon.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  margin-top: 6%;
+  padding: 45px;
+  cursor: pointer;
+}
+
+h2 {
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 1.71429px;
+  text-transform: uppercase;
+  color: #848ead;
+  margin-bottom: 41px;
+}
+
+.month {
+  display: flex;
+  margin-top: 40px;
+  gap: 10px;
+  justify-content: center;
+}
+.month h3 {
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: right;
+  letter-spacing: -0.8px;
+  color: #293356;
+}
+
+.month p {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+
+  color: #848ead;
+  padding-top: 13px;
+}
